@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 48672681}
   - component: {fileID: 48672680}
   - component: {fileID: 48672679}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (5)
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 257652256}
   - component: {fileID: 257652255}
   - component: {fileID: 257652254}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (3)
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
@@ -307,6 +307,189 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257652252}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &394546121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 394546126}
+  - component: {fileID: 394546125}
+  - component: {fileID: 394546124}
+  - component: {fileID: 394546123}
+  - component: {fileID: 394546122}
+  - component: {fileID: 394546127}
+  - component: {fileID: 394546128}
+  - component: {fileID: 394546129}
+  m_Layer: 0
+  m_Name: AGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &394546122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394546121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 1
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
+--- !u!114 &394546123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394546121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ebe1c97acb24d47938e1edbbb93822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {fileID: 731234212}
+  speed: 2
+  nextWaypointDistance: 3
+  reachedEndOfPath: 0
+--- !u!23 &394546124
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394546121}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &394546125
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394546121}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &394546126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394546121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.524797, y: 0.5, z: -15.538544}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &394546127
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394546121}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &394546128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394546121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6a34d769a1e4ac7b0b30e433aa443c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  smoothType: 1
+  subdivisions: 5
+  iterations: 2
+  strength: 0.5
+  uniformLength: 1
+  maxSegmentLength: 2
+  bezierTangentLength: 0.2
+  offset: 0.2
+  factor: 0.1
+--- !u!114 &394546129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394546121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f586f285b3847808d79083bd19ef1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  unwrap: 1
+  splitAtEveryPortal: 0
 --- !u!1 &437357971
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +502,7 @@ GameObject:
   - component: {fileID: 437357975}
   - component: {fileID: 437357974}
   - component: {fileID: 437357973}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (7)
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
@@ -492,6 +675,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &731234211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 731234212}
+  m_Layer: 0
+  m_Name: Taget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &731234212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731234211}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25.1, y: 0.6774111, z: 2.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963786713
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,7 +800,7 @@ GameObject:
   - component: {fileID: 1050413387}
   - component: {fileID: 1050413386}
   - component: {fileID: 1050413385}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (8)
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
@@ -699,7 +912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAABAIezjFxY3ggIAAHkFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGFVF1v2jAU/SvIz+sEoerK3rZA6Sa1RWVTH5Y+3MY3xMKxI38UaMV/37UTSKCTJiE5nHO/zr3XfmdC2Rpzp83cCH6nObKvAxa+2adBR97iFlZaLcUbHmyeBHdlMIJo8whOaMJHwc3qCp0R+Te1ksF4SKBXotCmmvEVpto6S3AB0iJRRrvgrQh6H7Bt67Brz7dwDvb0laNyaP5n5VUuoaqRh2o74/HBetyYKdLRWoxDbC2lsG0RzO3qKDKF2nqSQAZcAImK6YPGEsWqdPQn6Ts/FIVF15ZkYDcVhnrTRGXfddOwCuy6qesVpMdj4U3Iuw/sxSjShdHV7SHraBgyuFLk60fY5WBdr599eHpatlcbkGt4kfhUorrXc6O94kQ644Ort5hMe6GOytIS83WPaIo9R339cTqjbjr7qH6bSlG9BOTzZQMspY79ngQfNDSZH1Ry3AnbRiI0lPHb4i9Y9ZenJW6EsY6oNqEK5b1ob4Ipm8WuBTnepdoojHAruUYF0u0WFMadj/CM66U9Y24gXJM2ecsdtv/MJcKd/XB4Ri30phuXxZ++qhdaKLdEMHnZi2dLvblDWz54J4XCTlEg7qmJqVaqWT/7D7elNwXkPTeHW+cNTsFBvARUE+0J77tSQ6OH8lKGlYwqQvA/pCL8nkOTS6C8MsLsXqt4fU7O57AIKy/46aKzUQETvE6GxeQLv4Lh+AKS69H4+irJJ0WSXGLB4k0QinoOctE0rR0VbZDqtCja+sNLNpgbqOPN4wY2c/FW6d74hSr0MjeI6qGJcBSLhpLQC8FnXJDMJTonVNw99p4xqfM18uwYKIuNnW2dgayLkrFavGoXkIyl8f3K2J7t/wJQSwMEFAAACAgAAEAh7NJ9eqZtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTVUVBKL0osyCgGihiCOKWZKSB2tJJhWqJlqoWRQZqleYpZooGxbqKRhaGxhZlRsmWakZFJappSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAEAh7OMXFjeCAgAAeQUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAEAh7NJ9eqZtAAAAeAAAAAkAJAAAAAAAAAAAAAAAzwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAACHAwAAAAA=
+    dataString: UEsDBBQAAAgIAABAIewQ/+uNiQIAAH4FAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGFVNtO20AQ/ZVon9vKNhSSvrVOCK0ERKQVDzUPgz2OV1nvWnshCSj/zuzaiU2oVMmS7TO3c2Zm95VxaRrMrdJzzYsbVSD7NmL+m30a9cZr3MJKySV/wYPPAy9s5Z0g+NyD5Yrw2IcZVaPVPP8uV8I7RwQ6yUul61mxwlQZawguQRgkk1bWR0uCXkds2wXsuveLf4/29JWjtKj/5+VkLqBusPBse+c4Sjp3+gqOkpR0Pmc+uxKCm44Gs7smyEyhMY5EkEPBgWQFAl5lhXxVWfpJhsF3ZWnQdqQ07KZcU3farOyHaltWg1m3zJ5BOF/na9xyapPefLBfXoyDvdSqvj4UjqPIV7EVz9f3sMvB2EFXh/D0PXUnNyDW8CTwoUJ5q+ZaOVkMYp3BZDr4P8pLK8w9NasdHumegK75OKK4H9E+NGCbCl4/eeTLeQsshQotn/gY1DScn8Q4LIbpMhHqSfwx+BtWww3qDFdcG0umrqD07J6U096VzULXvBhnU6UlBrjj3KAEYXcLSmNPp3hiG5Q9sVyBPytd8c52OAInIQHu/aPoxLRQm35aBn+5ulkoLu0SQefVIJ+p1OYGTXXnrOASe0XecEtNTJWU7Qaaf4QtnS4hH4RZ3FqncQoWwjkgTrQmw90w1NAQIZ0QfiWDCp/8L6nwz6NvcgVUVwSY3SoZTtC796NfhJXjxftNZ3EJExwnUTm5LC4gOvsMyTg+G18k+aRMknMsWTgJXFLPQSzapnWjog2SvRZJS3+4zkZzDU04fIWGzZy/1Gowfi5Ltcw1orxrMxzFoqYidEkUs4KTzCVay2XYPfaaMaHyNRbZMVEWGjvbWg1ZnyVjDX9W1iMZS8MllrE9278BUEsDBBQAAAgIAABAIezSfXqmbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgjilmSkgdrSSYVqiZaqFkUGapXmKWaKBsW6ikYWhsYWZUbJlmpGRSWqaUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAABAIewQ/+uNiQIAAH4FAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAABAIezSfXqmbQAAAHgAAAAJACQAAAAAAAAAAAAAANYCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAjgMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 4900000, guid: 83d8f207d98c1c34d97e6c385abc69ac,
       type: 3}
@@ -767,7 +980,7 @@ GameObject:
   - component: {fileID: 1150321817}
   - component: {fileID: 1150321816}
   - component: {fileID: 1150321815}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
@@ -860,7 +1073,7 @@ GameObject:
   - component: {fileID: 1296689820}
   - component: {fileID: 1296689819}
   - component: {fileID: 1296689818}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (10)
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
@@ -953,7 +1166,7 @@ GameObject:
   - component: {fileID: 1380624380}
   - component: {fileID: 1380624379}
   - component: {fileID: 1380624378}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (4)
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
@@ -1046,7 +1259,7 @@ GameObject:
   - component: {fileID: 1394209679}
   - component: {fileID: 1394209678}
   - component: {fileID: 1394209677}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
@@ -1139,7 +1352,7 @@ GameObject:
   - component: {fileID: 1543925932}
   - component: {fileID: 1543925931}
   - component: {fileID: 1543925930}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (6)
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
@@ -1232,7 +1445,7 @@ GameObject:
   - component: {fileID: 1913806196}
   - component: {fileID: 1913806195}
   - component: {fileID: 1913806194}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PathfindingTest
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1337,7 +1550,7 @@ GameObject:
   - component: {fileID: 2104752288}
   - component: {fileID: 2104752287}
   - component: {fileID: 2104752286}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (9)
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
@@ -1430,7 +1643,7 @@ GameObject:
   - component: {fileID: 2145478129}
   - component: {fileID: 2145478128}
   - component: {fileID: 2145478127}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (2)
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
